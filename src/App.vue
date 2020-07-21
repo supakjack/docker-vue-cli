@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="">
+      <button @click="callPhurk">Phurk Check</button>
+    </div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -12,7 +15,12 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  methods: {
+    callPhurk(){
+      alert("phurk-check");
+    }
+  },
 }
 </script>
 

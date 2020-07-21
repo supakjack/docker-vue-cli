@@ -10,5 +10,8 @@ services:
     volumes:
       - '.:/app'
       - '/app/node_modules'
+      - '~/.composer-docker/cache:/root/.composer/cache:delegated'
+      - './:/usr/src/app:cached'
+    
     ports:
       - '8081:8080'
